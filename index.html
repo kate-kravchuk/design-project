@@ -12,6 +12,11 @@
         font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
         text-align: center;
       }
+      .container {
+        max-width: 2000px;
+        display: block;
+        padding: 30px 60px;
+      }
       h1,
       h2 {
         font-weight: 900;
@@ -38,21 +43,20 @@
       }
 
       button {
-        border-radius: 25px;
-        margin: 0 auto;
         display: block;
-        background-color: #fff;
-        border: 1px solid #a26b35;
-        color: #a26b35;
-        font-size: 16px;
-        line-height: 22px;
+        margin: 0 auto;
         padding: 16px 24px;
-        text-decoration: none;
-        transition: all 200ms ease;
+        background: #a26b35;
+        color: #f5eadf;
+        font-size: 18px;
+        border: none;
+        border-radius: 6px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 5px rgba (0, 0, 0, 0.3);
       }
       button:hover {
-        color: #fff;
-        background: #885df1;
+        opacity: 0.7;
+        cursor: pointer;
       }
     </style>
 
@@ -66,7 +70,7 @@
 
       <p>We love life, we love comfort, we love design</p>
 
-      <button class="buy-button">👉 Order a design project</button>
+      <button class="contact-button">👉 Order a design project</button>
       <p class="footer">
         This page was built by
         <a
@@ -77,5 +81,17 @@
         </a>
       </p>
     </div>
+    <script>
+      function contact() {
+        let name = prompt("What is ypur name?");
+        let email = prompt("What is your email adress?");
+
+        alert(
+          `Thanks,${name}! We will contact You later... Meanwhile, look what we have on the site`
+        );
+      }
+      let contactButton = document.querySelector(".contact-button");
+      contactButton.addEventListener("click", contact);
+    </script>
   </body>
 </html>
