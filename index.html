@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interior design</title>
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/74cd22f730.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
         margin: 100px 100px;
@@ -26,7 +34,10 @@
         margin-bottom: 50px;
       }
       h1 {
-        color: #272044;
+        font-family: "Playfair Display", serif;
+        font-size: 82px;
+        font-weight: 800px;
+        color: #004063;
       }
       h2 {
         text-align: center;
@@ -43,14 +54,15 @@
       }
 
       button {
-        display: block;
-        margin: 0 auto;
-        padding: 16px 24px;
+        position: fixed;
+        top: 70px;
+        left: 100px;
+        padding: 16px 16px;
         background: #a26b35;
         color: #f5eadf;
         font-size: 18px;
         border: none;
-        border-radius: 6px;
+        border-radius: 30px;
         transition: all 200ms ease-in-out;
         box-shadow: 5px 5px 5px rgba (0, 0, 0, 0.3);
       }
@@ -58,11 +70,36 @@
         opacity: 0.7;
         cursor: pointer;
       }
+      .instagram-icon {
+        color: brown;
+        font-size: 36px;
+        transition: 150ms ease-in-out;
+      }
+      .instagram-icon:hover {
+        color: chocolate;
+      }
+      .socials {
+        margin: 90px;
+        text-align: left;
+      }
+      .second {
+        color: #004063;
+        position: relative;
+        top: 40px;
+        right: 37px;
+      }
+      .third {
+        color: darkolivegreen;
+        position: relative;
+        top: 80px;
+        right: 74px;
+      }
     </style>
-
+  </head>
+  <body>
     <div class="container">
       <h1>GABBY'S HOME</h1>
-      <h2>GABBY'S HOME it is a project for design inspiration</h2>
+      <h2>Project for design inspiration</h2>
       <img src="images/april.jpg" alt="little green painting" />
       <img src="images/june.jpg" alt="little green painting" />
       <img src="images/july.jpg" alt="little green painting" />
@@ -80,6 +117,19 @@
           Kate Kravchuk
         </a>
       </p>
+      <a href="#"><i class="fa-brands fa-instagram instagram-icon"></i></a>
+
+      <div class="socials">
+        <a href="#"
+          ><i class="fa-brands fa-instagram instagram-icon first"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-instagram instagram-icon second"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-instagram instagram-icon third"></i
+        ></a>
+      </div>
     </div>
     <script>
       function contact() {
